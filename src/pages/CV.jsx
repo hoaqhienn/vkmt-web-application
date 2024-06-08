@@ -2,8 +2,8 @@
 import Button from "../components/Button";
 const CV = () => {
   return (
-    <div>
-      <Button to="/">Home</Button>
+    <div className="flex py-60 justify-center items-center">
+    <Button to="/">Home</Button>
     </div>
   );
 };
