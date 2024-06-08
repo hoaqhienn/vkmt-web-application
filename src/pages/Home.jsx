@@ -1,15 +1,9 @@
 //page/Home.jsx
-import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 const Home = () => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/cv");
-  };
   return (
     <div>
-      <h1>Home</h1>
-      <button onClick={() => alert("Hello!")}>Click me!</button>
-      <button onClick={handleClick}>CV</button>
+      <Button to="/cv">CV</Button>
     </div>
   );
 };
