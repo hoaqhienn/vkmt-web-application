@@ -7,7 +7,7 @@ span.ripple {
   border-radius: 50%;
   transform: scale(0);
   animation: ripple 500ms linear;
-  background-color: #FFBE98;
+  @apply bg-peach-1;
 }
 @keyframes ripple {
   to {

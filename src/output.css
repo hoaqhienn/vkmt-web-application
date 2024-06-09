@@ -554,8 +554,24 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .flex {
@@ -564,14 +580,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .w-full {
@@ -637,13 +645,13 @@ video {
   padding-bottom: 15rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 span.ripple {
@@ -651,7 +659,8 @@ span.ripple {
   border-radius: 50%;
   transform: scale(0);
   animation: ripple 500ms linear;
-  background-color: #FFBE98;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 190 152 / var(--tw-bg-opacity));
 }
 
 @keyframes ripple {
@@ -678,4 +687,14 @@ span.ripple {
 .hover\:text-peach-1:hover {
   --tw-text-opacity: 1;
   color: rgb(255 190 152 / var(--tw-text-opacity));
+}
+
+.dark\:bg-gray-800:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
